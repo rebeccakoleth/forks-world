@@ -1,13 +1,19 @@
-<!-- Becky Koleth -->
+<!--Becky Koleth 
+    Fork's World - Home Page
+    This is the landing page for Fork's World, featuring a welcome message and an introductory video.
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Fork's World</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Using Tailwind CSS via CDN for utility-first styling -->
         <link rel="stylesheet" href="./css/tailwind.css" media="screen" />
     </head>
     <body class="p-0 bg-pink-50">
         <!-- navigation bar for easy link access-->
+        <!-- fixed navigation bar stays at top of viewport when scrolling -->
+        <!-- uses flexbox for horizontal layout with consistent spacing -->
         <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800"> 
             <ul class="flex gap-4 text-xl">
                 <li><a class="font-semibold hover:underline" href="index.html">Home</a></li>
@@ -17,18 +23,27 @@
                 <li><a class="hover:underline" href="poems.html">Poems</a></li>
             </ul>
         </nav>
-        <div class="bg-pink-100">
-            <hr class="border-none h-px bg-transparent">
+        <!-- main content section with light pink background -->
+        <div class="bg-pink-100 pt-24 pb-8">
             <h1 class="text-pink-600 text-4xl font-bold text-center mt-24">Welcome to Fork's World</h1>
             <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800 max-w-4xl mx-auto">This website is all about my cat, Fork. To see her in action, read her fantastic poems, learn about her, or hear what other people have to say, you can explore Fork's World.</p>
-            <hr class="border-none h-px bg-transparent">
-        <!-- add video of Fork to fill white space -->
         </div>
         <div class="flex justify-center mt-6 mb-12 bg-pink-50 max-w-3xl mx-auto p-6">
             <!-- max width (max-w-3xl) so that it fits on the screen instead of needing to scroll down -->
-            <video class="rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.2)] w-full max-h-[70vh]" controls autoplay>
-                <!-- w-full makes the video as wide as its container, max-h-[70vh] makes the video fit within 70% of viewport height while respecting the width -->
-                <!-- controls autoplay means the video will play by default when the page loads -->
+            <!-- 
+                Video styling:
+                - rounded-xl: large rounded corners for softer appearance
+                - shadow with pink tint: custom shadow using RGBA for pink glow effect
+                - w-full: video takes full width of container
+                - max-h-[70vh]: limits height to 70% of viewport to prevent need for scrolling
+                - object-contain: maintains aspect ratio while fitting within constraints
+            -->
+            <video class="rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.2)] w-full max-h-[70vh] object-contain" controls autoplay muted>
+                <!-- 
+                    controls: shows play/pause buttons
+                    autoplay: starts playing when page loads
+                    muted: required for autoplay to work in most browsers
+                -->
                 <source src="./videos/fork.mp4" type="video/mp4">
             </video>
         </div>
