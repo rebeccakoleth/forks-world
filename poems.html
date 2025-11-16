@@ -1,13 +1,24 @@
-<!-- Becky Koleth -->
+<!-- 
+    Becky Koleth
+    Fork's World - Poems Page
+    Collection of "poems" created by Fork walking on the keyboard, with interpretive commentary.
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <!-- Character encoding: UTF-8 supports all characters including emojis and special symbols -->
+        <meta charset="UTF-8">
+        <!-- Viewport meta tag: enables responsive design by telling mobile browsers to match device width -->
+        <!-- Without this, mobile devices would show a zoomed-out desktop view requiring horizontal scrolling -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fork's Poems</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./css/tailwind.css" media="screen" />
     </head>
      <body class="m-0 p-0">
-        <!-- navigation bar for easy link access -->
+        <!-- Fixed navigation bar - stays at top of viewport when scrolling -->
+        <!-- Uses flexbox for horizontal layout with consistent spacing -->
+        <!-- z-10 ensures nav stays on top of other content -->
         <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800 z-10"> 
             <ul class="flex gap-4 text-xl">
                 <li><a class="hover:underline" href="index.html">Home</a></li>
@@ -18,167 +29,187 @@
                 <!-- "Poems" link is bold (font-semibold) to indicate current page -->
             </ul>
         </nav>
+
+        <!-- Header section with introduction
+            mt-12: top margin provides space below fixed navbar
+            pl-8 pr-8 pt-8: padding on left, right, and top -->
         <div class="mt-12 mb-6 pl-8 pr-8 pt-8">
             <h1 class="text-3xl text-pink-600">The Poems of <em>Fork the Great</em></h1>
-            <p class="text-xl text-green-800 mt-4">When Fork walks across my keyboard, I save the results as “poems.” They’re unedited paw-prints—tiny records of her mood, zoomies, and nap agenda. I grouped them into little stanzas so they’re easier to read, but every character comes straight from Fork.</p>
+            <p class="text-xl text-green-800 mt-4">
+                When Fork walks across my keyboard, I save the results as “poems.” They’re unedited paw-prints—tiny 
+                records of her mood, zoomies, and nap agenda. I grouped them into little stanzas so they’re easier to 
+                read, but every character comes straight from Fork.</p>
             <hr class="border-t-4 border-pink-500 border-solid my-6">
         </div>
+        
+         <!-- 
+            Poems container
+            max-w-3xl: constrains width for comfortable reading
+            mx-auto: centers container horizontally
+            px-6: horizontal padding prevents content from touching edges on mobile
+        -->
         <div class="max-w-3xl mx-auto px-6 mt-12">
+            <h1 class="text-3xl font-bold text-pink-600 mb-8 text-center">
+            Poems Written by Fork
+            </h1>
+        <!-- a little pink card for every other poem-->
+        <div class="bg-pink-100 p-6 rounded-lg mb-6 shadow-sm">
+            <h2 class="text-xl font-semibold mb-2">🐾 Something About Curiosity and Cats</h2>
+                <!--
+                    Line breaks preserved using <br> tags to maintain Fork's original formatting
+                -->
+            <p>
+                ;l’<br>
+                5<br>
+                ioo<br>
+                ???????????????Y&H???????????????????????????????????????????????????????????????????????????????????90<br>
+                -=<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                Clearly, Fork has many questions. The repeated question marks suggest deep, possibly philosophical uncertainty, as well as <strong>curiosity</strong>.
+            </p>
+        </div>
+        <!-- a little white card with pink outline for every other poem-->
+        <div class="max-w-3xl mx-auto px-6 mt-10 border border-pink-300 rounded-xl p-6 bg-white shadow-sm space-y-10">
+            <h2 class="text-xl font-semibold mb-2">🐾 A Mad Dash Across Keys</h2>
+            <p>
+                jhru]]<br>
+                bg12<br>
+                `<br>
+                zx6#cio E<br>
+                “???????????????????iu89<br>
+                hjbpzspx0-567;’/////////////////l<br>
+                56te3<br>
+                1<br>
+                BV<br>
+                gyfrt<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                This was a quick poem, a result of Fork dashing across the keyboard. I don't know what she's trying to communicate here, so it's up to your interpretation.
+            </p>
+        </div>
 
-  <h1 class="text-3xl font-bold text-pink-600 mb-8 text-center">
-    Poems Written by Fork
-  </h1>
+        <div class="bg-pink-100 p-6 rounded-lg mb-12 my-12 shadow-sm">
+            <h2 class="text-xl font-semibold mb-2">🐾 Escape Backslash Style</h2>
+            <p>
+                .≥≥÷÷÷÷÷÷÷÷÷÷÷÷90<br>
+                \<br>
+                \<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                \\\<br>
+                fdr4<br>
+                xtr6<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                The backslash, typically used as an escape character in programming, here seems to represent a <strong>barrier</strong> or <strong>obstacle</strong>. Fork may be expressing feelings of being trapped or hindered.
+            </p>
+        </div>
 
-  <!-- a little pink card for each poem (maybe copy and paste it for each one) -->
-    <div class="bg-pink-100 p-6 rounded-lg mb-6 shadow-sm">
-        <h2 class="text-xl font-semibold mb-2">🐾 Something About Curiosity and Cats</h2>
-        <p>
-            ;l’<br>
-            5<br>
-            ioo<br>
-            ???????????????Y&H???????????????????????????????????????????????????????????????????????????????????90<br>
-            -=<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-        Clearly, Fork has many questions. The repeated question marks suggest deep, possibly philosophical uncertainty, as well as <strong>curiosity</strong>.
-        </p>
-    </div>
-      <!-- <div class="bg-pink-100 p-4 rounded-lg mb-6 shadow-sm"> -->
-    <div class="max-w-3xl mx-auto px-6 mt-10 border border-pink-300 rounded-xl p-6 bg-white shadow-sm space-y-10">
-        <h2 class="text-xl font-semibold mb-2">🐾 A Mad Dash Across Keys</h2>
-        <p>
-            jhru]]<br>
-            bg12<br>
-            `<br>
-            zx6#cio E<br>
-            “???????????????????iu89<br>
-            hjbpzspx0-567;’/////////////////l<br>
-            56te3<br>
-            1<br>
-            BV<br>
-            gyfrt<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-            This was a quick poem, a result of Fork dashing across the keyboard. I don't know what she's trying to communicate here, so it's up to your interpretation.
-        </p>
-    </div>
-    <div class="bg-pink-100 p-6 rounded-lg mb-12 my-12 shadow-sm">
-        <h2 class="text-xl font-semibold mb-2">🐾 Escape Backslash Style</h2>
-        <p>
-            .≥≥÷÷÷÷÷÷÷÷÷÷÷÷90<br>
-            \<br>
-            \<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            \\\<br>
-            fdr4<br>
-            xtr6<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-            The backslash, typically used as an escape character in programming, here seems to represent a <strong>barrier</strong> or <strong>obstacle</strong>. Fork may be expressing feelings of being trapped or hindered.
-        </p>
-    </div>
-     <div class="max-w-3xl mx-auto px-6 mt-10 border border-pink-300 rounded-xl p-6 bg-white shadow-sm space-y-10">
-        <h2 class="text-xl font-semibold mb-2">🐾 And Then What?</h2>
-        <p>
-            ‘’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’[<br>
-            *&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
-            &&&&&&&&&&^:”?N<br>
-            cf0<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-            Another mysterious poem. She may be the literary equivalent of Banksy for cats. What could all those ampersands possibly mean? Are we always waiting for the next thing? Or is she perhaps commenting on the perpetually growing workload that comes with life? I'm not sure.
-        </p>
-    </div>
-    <div class="bg-pink-100 p-6 rounded-lg mb-12 my-12 shadow-sm">
-        <h2 class="text-xl font-semibold mb-2">🐾 Escape Backslash Style</h2>
-        <p>
-                /÷®´<br> 
-            ,.loft12v4<br>
-            =][-<br>
-            bgcfxv <br>
-            v9<br>
-            ]\<br>
-            ghy=-gfp345[amnsttnt ui<br>
-            \\<br>
-            \\<br>
-            \\<br>
-            \\\<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-            There are some symbols here that I didn't know were possible to type on this keyboard. Fork's creativity knows no bounds. She teaches me something new every single day.
-        </p>
-    </div>
-    <div class="max-w-3xl mx-auto px-6 mt-10 border border-pink-300 rounded-xl p-6 bg-white shadow-sm space-y-10">
-        <h2 class="text-xl font-semibold mb-2">🐾 A Strange Variation</h2>
-        <p>
-            dn [p-0/<br>
-            rT% %<br>
-            76                  o0x(<br>
-            n  vb”?<br>
-            ;’/[//////////////////////////////)_?{+<br>
-            (g)61`Z¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸<br>
-            tjk1`Y^<br>
-            "?Qa<br>
-            q2swa<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-            Typically, Fork utilizes some repeated characters to create rhythm in her poems. Here, she experiments with different symbols and spacing, perhaps reflecting a more chaotic or experimental mood. What do you think she was feeling when she composed this one?
-        </p>
-    </div>
-    <div class="bg-pink-100 p-6 rounded-lg mb-12 my-12 shadow-sm">
-        <h2 class="text-xl font-semibold mb-2">🐾 A World Divided</h2>
-        <p>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            <br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
-            ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷BN!<br>
-        </p>
-        <p class="text-base text-green-800 italic mt-2">
-            This poem seems to represent a <strong>division</strong> or <strong>separation</strong> in Fork's world. The repeated division symbols could symbolize barriers or walls, suggesting feelings of isolation or separation from something important. Perhaps it is a social commentary on societal divisions.
-        </p>
-    </div>
+        <div class="max-w-3xl mx-auto px-6 mt-10 border border-pink-300 rounded-xl p-6 bg-white shadow-sm space-y-10">
+            <h2 class="text-xl font-semibold mb-2">🐾 And Then What?</h2>
+            <p>
+                ‘’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’[<br>
+                *&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&<br>
+                &&&&&&&&&&^:”?N<br>
+                cf0<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                Another mysterious poem. She may be the literary equivalent of Banksy for cats. What could all those ampersands possibly mean? Are we always waiting for the next thing? Or is she perhaps commenting on the perpetually growing workload that comes with life? I'm not sure.
+            </p>
+        </div>
+        
+        <div class="bg-pink-100 p-6 rounded-lg mb-12 my-12 shadow-sm">
+            <h2 class="text-xl font-semibold mb-2">🐾 Escape Backslash Style</h2>
+            <p>
+                    /÷®´<br> 
+                ,.loft12v4<br>
+                =][-<br>
+                bgcfxv <br>
+                v9<br>
+                ]\<br>
+                ghy=-gfp345[amnsttnt ui<br>
+                \\<br>
+                \\<br>
+                \\<br>
+                \\\<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                There are some symbols here that I didn't know were possible to type on this keyboard. Fork's creativity knows no bounds. She teaches me something new every single day.
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 mt-10 border border-pink-300 rounded-xl p-6 bg-white shadow-sm space-y-10">
+            <h2 class="text-xl font-semibold mb-2">🐾 A Strange Variation</h2>
+            <p>
+                dn [p-0/<br>
+                rT% %<br>
+                76                  o0x(<br>
+                n  vb”?<br>
+                ;’/[//////////////////////////////)_?{+<br>
+                (g)61`Z¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸<br>
+                tjk1`Y^<br>
+                "?Qa<br>
+                q2swa<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                Typically, Fork utilizes some repeated characters to create rhythm in her poems. Here, she experiments with different symbols and spacing, perhaps reflecting a more chaotic or experimental mood. What do you think she was feeling when she composed this one?
+            </p>
+        </div>
+
+        <div class="bg-pink-100 p-6 rounded-lg mb-12 my-12 shadow-sm">
+            <h2 class="text-xl font-semibold mb-2">🐾 A World Divided</h2>
+            <p>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                <br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷<br>
+                ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷BN!<br>
+            </p>
+            <p class="text-base text-green-800 italic mt-2">
+                This poem seems to represent a <strong>division</strong> or <strong>separation</strong> in Fork's world. The repeated division symbols could symbolize barriers or walls, suggesting feelings of isolation or separation from something important. Perhaps it is a social commentary on societal divisions.
+            </p>
+        </div>
     </body>
 </html>
