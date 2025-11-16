@@ -19,6 +19,7 @@
         <!-- navigation bar for easy link access-->
         <!-- fixed navigation bar stays at top of viewport when scrolling -->
         <!-- uses flexbox for horizontal layout with consistent spacing -->
+        <!-- z-10 ensures nav stays on top of other content -->
         <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800 z-10"> 
             <ul class="flex gap-4 text-xl">
                 <li><a class="font-semibold hover:underline" href="index.html">Home</a></li>
@@ -28,18 +29,22 @@
                 <li><a class="hover:underline" href="poems.html">Poems</a></li>
             </ul>
         </nav>
-        <!-- main content section with light pink background -->
-        <div class="bg-pink-100 pt-20 pb-8">
+        <!-- main content section with light pink background
+            pt-24: top padding (96px) pushes content down to clear the fixed navbar
+            pb-8: bottom padding for breathing room before video section
+        -->
+        <div class="bg-pink-100 pt-24 pb-8">
             <h1 class="text-pink-600 text-4xl font-bold text-center">Welcome to Fork's World</h1>
             <!-- 
                 Centered intro text with max-width for readability
                 mx-auto: centers container horizontally
                 px-6: horizontal padding prevents text from touching edges on mobile
             -->
-            <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800 max-w-4xl mx-auto px-6">This website is all about my cat, Fork. To see her in action, read her fantastic poems, learn about her, or hear what other people have to say, you can explore Fork's World.</p>
+            <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800 max-w-4xl mx-auto px-6">
+                This website is all about my cat, Fork. To see her in action, read her fantastic poems,
+                learn about her, or hear what other people have to say, you can explore Fork's World.</p>
         </div>
         <div class="flex justify-center mt-6 mb-12 bg-pink-50 max-w-3xl mx-auto p-6">
-            <!-- max width (max-w-3xl) so that it fits on the screen instead of needing to scroll down -->
             <!-- 
                 Video styling:
                 - rounded-xl: large rounded corners for softer appearance
