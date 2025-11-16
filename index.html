@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/tailwind.css" media="screen" />
     </head>
     <body class="p-0 bg-pink-50">
-        <!-- navigation bar for easy link access (maybe make it bigger)-->
+        <!-- navigation bar for easy link access-->
         <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800"> 
             <ul class="flex gap-4 text-xl">
                 <li><a class="font-semibold hover:underline" href="index.html">Home</a></li>
@@ -20,7 +20,7 @@
         <div class="bg-pink-100">
             <hr class="border-none h-px bg-transparent">
             <h1 class="text-pink-600 text-4xl font-bold text-center mt-24">Welcome to Fork's World</h1>
-            <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800">This website is all about my cat, Fork. To see her in action, read her fantastic poems, learn about her, or hear what other people have to say, you can explore Fork's World.</p>
+            <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800 max-w-4xl">This website is all about my cat, Fork. To see her in action, read her fantastic poems, learn about her, or hear what other people have to say, you can explore Fork's World.</p>
             <hr class="border-none h-px bg-transparent">
         <!-- add video of Fork to fill white space -->
         </div>
@@ -28,7 +28,6 @@
             <!-- max width (max-w-3xl) so that it fits on the screen instead of needing to scroll down -->
             <video class="rounded-xl shadow-[0_4px_20px_rgba(236,72,153,0.2)] w-full max-h-[70vh]" controls autoplay>
                 <!-- w-full makes the video as wide as its container, max-h-[70vh] makes the video fit within 70% of viewport height while respecting the width -->
-                <!-- this doesn't work just yet, so i need to figure it out -->
                 <!-- controls autoplay means the video will play by default when the page loads -->
                 <source src="./videos/fork.mp4" type="video/mp4">
             </video>
