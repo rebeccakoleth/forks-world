@@ -1,4 +1,10 @@
-/* put all the tailwind styles in here */
+/* 
+    Becky Koleth
+    Tailwind CSS Configuration
+    This file imports Tailwind's utility classes via the CDN loaded in HTML files.
+    The @tailwind directives would be used in a build process, but since we're using
+    the CDN approach, this file serves as a placeholder for any custom CSS if needed.
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
