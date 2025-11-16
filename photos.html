@@ -1,78 +1,131 @@
-<!-- Becky Koleth -->
+<!-- 
+    Becky Koleth
+    Fork's World - Photos Page
+    Photo gallery using flexbox grid layout with captions.
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <!-- Character encoding: UTF-8 supports all characters including emojis and special symbols -->
+        <meta charset="UTF-8">
+        <!-- Viewport meta tag: enables responsive design by telling mobile browsers to match device width -->
+        <!-- Without this, mobile devices would show a zoomed-out desktop view requiring horizontal scrolling -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Photos</title>
+        <!-- Using Tailwind CSS via CDN for utility-first styling -->
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./css/tailwind.css" media="screen" />
     </head>
     <body class="m-0 p-0">
-       <!-- navigation bar for easy link access -->
+        <!-- Fixed navigation bar - stays at top of viewport when scrolling -->
+        <!-- Uses flexbox for horizontal layout with consistent spacing -->
+        <!-- z-10 ensures nav stays on top of other content -->
         <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800"> 
             <ul class="flex gap-4 text-xl">
-                <li><a class="font-semibold hover:underline" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="index.html">Home</a></li>
                 <li><a class="hover:underline" href="about.html">About Fork</a></li>
-                <li><a class="hover:underline" href="photos.html">Photos</a></li>
+                <!-- "Photos" link is bold (font-semibold) to indicate current page -->
+                <li><a class="font-semibold hover:underline" href="photos.html">Photos</a></li>
                 <li><a class="hover:underline" href="reviews.html">Reviews</a></li>
                 <li><a class="hover:underline" href="poems.html">Poems</a></li>
             </ul>
         </nav>
+
+        <!-- 
+            Header section
+            mt-12: top margin provides space below fixed navbar
+            p-8: padding on all sides
+        -->
         <div class="mt-12 p-8">
             <h1 class="text-3xl text-pink-600">Photos of Fork</h1>
             <p class="text-xl text-green-800 mt-4">Here are some snapshots of Fork in real life.</p>
             <hr class="border-t-4 border-pink-500 border-solid mt-6 my-2">
         </div>
+
+        <!-- 
+            Photo gallery container using responsive flexbox grid
+            - flex flex-wrap: creates a flexible grid that wraps items to new rows
+            - justify-center: centers items horizontally
+            - gap-8: adds 32px spacing between all items (both horizontal and vertical)
+            - creates a clean, organized layout without needing manual margins on each item
+        -->
         <div class="flex flex-wrap justify-center gap-8 mt-2 p-8">
             <!-- gap-8 adds space both horizontally and vertically -->
+            <!-- 
+                Individual photo container with responsive width breakpoints:
+                - w-full: full width on mobile (stacked vertically, 1 column)
+                - sm:w-1/2: half width on small screens (2 columns)
+                - lg:w-1/3: one-third width on large screens (3 columns)
+                - px-4: horizontal padding prevents images from touching container edges
+                This creates a responsive layout that adapts to different screen sizes
+            -->
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_sunroom.png" alt="Fork in a basket" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork in a basket in the air (originally meant for a plant to sit in)</p>
+                <!-- 
+                    Image styling:
+                    - w-full: image fills container width
+                    - rounded-lg: rounded corners (8px radius) for softer appearance
+                    - shadow with custom pink tint: shadow-[horizontal_vertical_blur_color]
+                      Using RGBA(236,72,153,0.3) for pink-500 at 30% opacity creates subtle pink glow
+                    - mb-3: space between image and caption
+                -->
+                <img src="./images/fork_sunroom.png" alt="Fork in a basket" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork in a basket in the air (originally meant for a plant to sit in)</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_yawning.png" alt="Fork yawning" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork yawning</p>
+                <img src="./images/fork_yawning.png" alt="Fork yawning" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork yawning with all her teeth on display</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/gingerbread_fork.png" alt="Fork and a gingerbread house" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork examining a poorly constructed gingerbread house</p>
+                <img src="./images/gingerbread_fork.png" alt="Fork and a gingerbread house" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork examining a poorly constructed gingerbread house</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/bellas_fork_painting.png" alt="A painting of Fork" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Here is a painting of Fork done by Bella</p>
+                <img src="./images/bellas_fork_painting.png" alt="A painting of Fork" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Here is a painting of Fork done by Bella</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_with_owl.png" alt="Fork with an owl" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork looking quite majestic with an owl in the background</p>
+                <img src="./images/fork_with_owl.png" alt="Fork with an owl" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork looking quite majestic with an owl in the background</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/staring_down.png" alt="Fork staring the camera down" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork being very serious in her tower</p>
+                <img src="./images/staring_down.png" alt="Fork staring the camera down" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork being very serious in her tower</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_coding.png" alt="Fork on a computer" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork hard at work coding up a storm</p>
+                <img src="./images/fork_coding.png" alt="Fork on a computer" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork hard at work coding up a storm</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_with_bigcat.png" alt="Fork with a big cat" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork summoning the spirit of her big cat ancestors</p>
+                <img src="./images/fork_with_bigcat.png" alt="Fork with a big cat" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork summoning the spirit of her big cat ancestors</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_leaves.png" alt="Fork next to a bag of leaves" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">A bag of leaves is tempting Fork to explore</p>
+                <img src="./images/fork_leaves.png" alt="Fork next to a bag of leaves" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">A bag of leaves is tempting Fork to explore</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_in_wild.png" alt="Fork outside on a walk" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork exploring the great outdoors</p>
+                <img src="./images/fork_in_wild.png" alt="Fork outside on a walk" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork exploring the great outdoors</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_monk_mode.png" alt="Fork with a monk" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork in monk mode, contemplating life</p>
+                <img src="./images/fork_monk_mode.png" alt="Fork with a monk" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork in monk mode, contemplating life</p>
             </div>
+
             <div class="w-full sm:w-1/2 lg:w-1/3 px-4">
-            <img src="./images/fork_with_stars.png" alt="Fork on a sheet of stars" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
-            <p class="text-lg text-green-800 text-center">Fork surrounded by stars</p>
+                <img src="./images/fork_with_stars.png" alt="Fork on a sheet of stars" class="w-full mx-auto rounded-lg shadow-[0_4px_20px_rgba(236,72,153,0.3)]">
+                <p class="text-lg text-green-800 text-center">Fork surrounded by stars</p>
             </div>
         </div>
-        <!-- make it flex box and put three images per row -->
     </body>
 </html>
