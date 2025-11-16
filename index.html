@@ -3,8 +3,13 @@
     This is the landing page for Fork's World, featuring a welcome message and an introductory video.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <!-- Character encoding: UTF-8 supports all characters including emojis and special symbols -->
+        <meta charset="UTF-8">
+        <!-- Viewport meta tag: enables responsive design by telling mobile browsers to match device width -->
+        <!-- Without this, mobile devices would show a zoomed-out desktop view requiring horizontal scrolling -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fork's World</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Using Tailwind CSS via CDN for utility-first styling -->
@@ -14,7 +19,7 @@
         <!-- navigation bar for easy link access-->
         <!-- fixed navigation bar stays at top of viewport when scrolling -->
         <!-- uses flexbox for horizontal layout with consistent spacing -->
-        <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800"> 
+        <nav class="fixed top-0 left-0 right-0 py-4 px-6 bg-pink-200 text-green-800 z-10"> 
             <ul class="flex gap-4 text-xl">
                 <li><a class="font-semibold hover:underline" href="index.html">Home</a></li>
                 <li><a class="hover:underline" href="about.html">About Fork</a></li>
@@ -26,7 +31,12 @@
         <!-- main content section with light pink background -->
         <div class="bg-pink-100 pt-20 pb-8">
             <h1 class="text-pink-600 text-4xl font-bold text-center">Welcome to Fork's World</h1>
-            <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800 max-w-4xl mx-auto">This website is all about my cat, Fork. To see her in action, read her fantastic poems, learn about her, or hear what other people have to say, you can explore Fork's World.</p>
+            <!-- 
+                Centered intro text with max-width for readability
+                mx-auto: centers container horizontally
+                px-6: horizontal padding prevents text from touching edges on mobile
+            -->
+            <p class="text-xl mt-4 mb-6 text-center pt-6 text-green-800 max-w-4xl mx-auto px-6">This website is all about my cat, Fork. To see her in action, read her fantastic poems, learn about her, or hear what other people have to say, you can explore Fork's World.</p>
         </div>
         <div class="flex justify-center mt-6 mb-12 bg-pink-50 max-w-3xl mx-auto p-6">
             <!-- max width (max-w-3xl) so that it fits on the screen instead of needing to scroll down -->
@@ -45,6 +55,7 @@
                     muted: required for autoplay to work in most browsers
                 -->
                 <source src="./videos/fork.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
         </div>
     </body>
